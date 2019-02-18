@@ -106,7 +106,7 @@ display: inline-block;
 }
 
 
-button {
+.btn {
 width: 150px;
 border: black solid 1px;
 font-size: 15px;
@@ -140,4 +140,83 @@ margin-bottom: 40px;
 }
 section p {
 	font-family: 'Staatliches', cursive;
+}
+
+
+/* Tablet Media Queries */
+@media (max-width: 1050px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar a:last-child {
+    order: -1;
+  }
+  
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .codeImg1 {
+    display: none;
+  }
+
+  .btn {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  section {
+    margin: 20px 1%;
+  }
+
+  .headerText {
+    text-align: center;
+  }
+
+  .bottomSection {
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 745px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a{
+    height: 60px;
+  }
+
+  .navbar a:last-child {
+    order: -1;
+  }
+
+  .header h1{
+    font-size: 75px;
+  }
+
+  .topSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 130px
+  }
+
 }
